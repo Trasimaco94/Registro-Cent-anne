@@ -7,11 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Nuovo Registro</h1>
-    <form action="">
-<input type="text" placeholder="Inserisci materia" id="newSubject">
-<button id="newSubject" onclick="openRegister()">Crea</button>
-</form>
+    <div class="container">
+        <h2> Cosa vuoi aggiungere? </h2>
+        <input type="text" placeholder="Evento" id="input">
+        <button onclick="addIndex()">Aggiungi</button> 
+        <div class="riga">
+        <ul id="elenco">
+        </ul>
+              
+        </div>
+        <p> Eventi totali:
+            <span id="count"> 0 </span>
+        </p>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
